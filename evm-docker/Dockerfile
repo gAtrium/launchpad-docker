@@ -3,7 +3,7 @@ FROM debian:bullseye
 RUN apt-get update && apt-get install -y git build-essential curl python
 
 # Install Node.js 12
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get update && apt-get install -y nodejs
 
 # Install Yarn
